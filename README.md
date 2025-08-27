@@ -1,7 +1,10 @@
 # poe-part1
-# Project Titel: Cape Malay Kitchen
-# Student Information: ST10464928; Adams, I
-# Project Overview: Proposal Content
+# Project Titel:
+Cape Malay Kitchen
+# Student Information:
+ST10464928; Adams, I
+# Project Overview:
+Proposal Content
 # Website Goals and Objectives: 
 Goals:Create an online archive of authentic Cape Malay recipes. Promote cultural education through food history and traditions. Provide resources for people to learn and cook Cape Malay meals at home. Use storytelling and community engagement to keep traditions alive. 
 Key Performance indicators:Measure success through community engagement, share, visits and recipe downloads.
@@ -22,7 +25,8 @@ The website will be designed to be an immersive cultural experience, combining d
   •	Week 1 to 3: Finalize project proposal and submit for approval.
   •	Week 4: Create the basic HTML file structure. Build index.html, about.html and contact.html. build the rest of the pages recipes.html, and the sub links for the recipes (main dish, desserts, drinks, and savouries).
   •	Week 5: integrate all content, test the site, cross-browser compatibility, and fix bugs, add images. Start finalizing the website, and add it to GitHub.
-# Changelog: I made spelling mistake and fixed them after I would proof read and test my website
+# Changelog:
+I made spelling mistake and fixed them after I would proof read and test my website
 # Reference
 •	Adams, I., 2025. Cape Malay Chicken Curry. [photograph] (Personal Collection). Unpublished.
 •	Adams, I., 2025. Cape Malay Butter Chicken. [photograph] (Personal Collection). Unpublished.
