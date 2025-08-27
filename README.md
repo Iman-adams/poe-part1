@@ -3,15 +3,9 @@
 # Student Information: ST10464928; Adams, I
 # Project Overview: Proposal Content
 # Website Goals and Objectives: 
-   Goals:
-    •	Create an online archive of authentic Cape Malay recipes.
-    •	Promote cultural education through food history and traditions.
-    •	Provide resources for people to learn and cook Cape Malay meals at home.
-    •	Use storytelling and community engagement to keep traditions alive.
-   Key Performance indicators
-    •	Measure success through community engagement, share, visits and recipe downloads.
+Goals:Create an online archive of authentic Cape Malay recipes. Promote cultural education through food history and traditions. Provide resources for people to learn and cook Cape Malay meals at home. Use storytelling and community engagement to keep traditions alive. Key Performance indicators. Measure success through community engagement, share, visits and recipe downloads.
 # Proposed Website Features and Functionality
-  The website will be designed to be an immersive cultural experience, combining delicious recipes with educational content.
+The website will be designed to be an immersive cultural experience, combining delicious recipes with educational content.
   •	Homepage: An eye-catching introduction on the purpose of the site, mission, and a prominent “Start Cooking” button to guide users to the recipe library.
   •	Recipe library: the central hub of the website, it will be a compressive online archive of recipes, categorised for easy navigation:
     o	Main Dishes (e.g., chicken curry, bredie)
