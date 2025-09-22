@@ -1,5 +1,5 @@
 # poe-part1
-# Project Titel:
+# Project Title:
 Cape Malay Kitchen
 # Student Information:
 ST10464928; Adams, I
