@@ -1,0 +1,123 @@
+/* ===== BASIC STYLES ===== */
+
+/* Apply font and background to the whole page */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #6FB1C0; /* Bo-Kaap blue */
+  color: #333; /* dark gray text */
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+/* Headings */
+h1, h2, h3 {
+  font-family: Georgia, serif;
+  color: #5c3d2e; /* brown */
+  margin-bottom: 0.5em;
+}
+
+h1 { font-size: 2.2rem; }
+h2 { font-size: 1.8rem; }
+p { margin-bottom: 1rem; }
+
+/* ===== LAYOUT HELPERS ===== */
+
+/* Keep content centered with some space */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Simple flex layout */
+.flex {
+  display: flex;
+  gap: 1rem;
+}
+
+/* ===== BUTTONS ===== */
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #e96a57; /* coral */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.btn:hover {
+  background-color: #f5b942; /* gold on hover */
+}
+
+/* ===== HEADER & NAVIGATION ===== */
+
+.site-header {
+  background-color: #e96a57;
+  padding: 1rem 0;
+  border-bottom: 2px solid #eee;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: Georgia, serif;
+  font-size: 1.5rem;
+  color: #A0B288; /* cardamom green */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+}
+.nav-links a:hover {
+  color: #e96a57;
+}
+
+/* ===== HERO SECTION ===== */
+
+.hero {
+  background: url('path-to-your-hero-image.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 5rem 1rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+/* ===== RESPONSIVE (for mobile) ===== */
+@media (max-width: 768px) {
+  .main-nav {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .hero {
+    padding: 3rem 1rem;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
