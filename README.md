@@ -26,7 +26,8 @@ The website will be designed to be an immersive cultural experience, combining d
   •	Week 4: Create the basic HTML file structure. Build index.html, about.html and contact.html. build the rest of the pages recipes.html, and the sub links for the recipes (main dish, desserts, drinks, and savouries).
   •	Week 5: integrate all content, test the site, cross-browser compatibility, and fix bugs, add images. Start finalizing the website, and add it to GitHub.
 # Changelog:
-I made spelling mistake and fixed them after I would proof read and test my website
+I made spelling mistake and fixed them after I would proof read and test my website.
+Updated Frikkadel, Mash Potatoe, and Tomatoe Smoortjie code, by adding <ol></ol> because I didn't have it in the first submission
 # Reference
 •	Adams, I., 2025. Cape Malay Chicken Curry. [photograph] (Personal Collection). Unpublished.
 •	Adams, I., 2025. Cape Malay Butter Chicken. [photograph] (Personal Collection). Unpublished.
