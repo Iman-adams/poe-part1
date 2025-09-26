@@ -27,7 +27,7 @@ The website will be designed to be an immersive cultural experience, combining d
   •	Week 5: integrate all content, test the site, cross-browser compatibility, and fix bugs, add images. Start finalizing the website, and add it to GitHub.
 # Changelog:
 I made spelling mistake and fixed them after I would proof read and test my website.
-Updated Frikkadel, Mash Potatoe, and Tomatoe Smoortjie code.
+Updated Frikkadel, Mash Potatoe, and Tomatoe Smoortjie code. Created an external CSS stylesheet to add styling to website. Linked the CSS file to all HTML pages for consistent design. Updated recipe pages by moving layout and size styles from inline HTML to the external stylesheet for easier maintenance. Added aditional content to the homepage and About page to make them more informative and visuall complete. Added a contact form and an embedded map to show the loaction on the Contact page.
 # Reference
 •	Adams, I., 2025. Cape Malay Chicken Curry. [photograph] (Personal Collection). Unpublished.
 •	Adams, I., 2025. Cape Malay Butter Chicken. [photograph] (Personal Collection). Unpublished.
