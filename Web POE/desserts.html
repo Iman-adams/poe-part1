@@ -2,44 +2,51 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Drink - Cape Malay Kitchen</title>
+  <title>Desserts - Cape Malay Kitchen</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Desserts</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="cape-malay-history.html">Cape Malay History</a></li>
-        <li><a href="bo-kaap-history.html">Bo-Kaap History</a></li>
-        <li><a href="recipes.html">Recipes</a></li>
-      </ul>
-    </nav>
+  <header class="site-header">        
+    <h1>Desserts</h1>        
+    <div class="container">          
+      <nav class="main-nav">
+        <a href="#" class="logo">Cape Malay Kitchen</a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>        
+          <li><a href="about.html">About</a></li>                   
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="cape-malay-history.html">Cape Malay History</a></li>
+          <li><a href="bo-kaap-history.html">Bo-Kaap History</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+        </ul>
+      </nav>    
+    </div>
   </header>
 
   <main>
-    <section>
+    <section class="recipe-cards-section">
       <h2>Recipe Cards</h2>
+      <div class="recipe-cards-container">
 
-      <!-- Recipe Card -->
-      <article>
-        <a href="koesisters.html">
-          <img src="20250823_183905.jpg" alt="Koesisters" width="200">
-          <h3>Koesisters</h3>
-          <p>⏱️ Time: 120 minutes</p>
-          <p>🍽️ Serves: 20</p>
-        </a>
-      </article>
-
-      <!-- Add more cards here -->
-
+        <!-- Recipe Card: Koesisters -->
+        <div class="recipe-card">
+          <a href="koesisters.html">
+            <img src="20250823_183905.jpg" alt="Koesisters">
+            <h3>Koesisters</h3>
+            <p>⏱️ Time: 120 minutes</p>
+            <p>🍽️ Serves: 20</p>
+          </a>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Cape Malay Kitchen. All rights reserved.</p>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2025 Cape Malay Kitchen. Bringing Our Flavours Home.</p>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
