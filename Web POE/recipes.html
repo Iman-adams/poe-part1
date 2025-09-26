@@ -3,37 +3,70 @@
 <head>
   <meta charset="UTF-8">
   <title>Recipes - Cape Malay Kitchen</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
+  <header class="site-header">
     <h1>Recipes</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="cape-malay-history.html">Cape Malay History</a></li>
-        <li><a href="bo-kaap-history.html">Bo-Kaap History</a></li>
-        <li><a href="recipes.html">Recipes</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <nav class="main-nav">
+        <a href="#" class="logo">Cape Malay Kitchen</a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>        
+          <li><a href="about.html">About</a></li>                   
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="cape-malay-history.html">Cape Malay History</a></li>
+          <li><a href="bo-kaap-history.html">Bo-Kaap History</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+        </ul>
+      </nav>    
+    </div>
   </header>
 
   <main>
-    <section>
+    <section class="recipe-categories">
       <h2>Choose a Category</h2>
-      <ul>
-        <li><a href="main.html">Main Dishes</a></li>
-        <li><a href="bread.html">Bread</a></li>
-        <li><a href="desserts.html">Desserts</a></li>
-        <li><a href="drinks.html">Drinks</a></li>
-        <li><a href="savouries.html">Savouries</a></li>
-      </ul>
+      <div class="cards-container">
+        <div class="recipe-card">
+          <h3>Main Dishes</h3>
+          <p>Delicious traditional Cape Malay main dishes.</p>
+          <a href="main.html" class="card-btn">View Recipes</a>
+        </div>
+
+        <div class="recipe-card">
+          <h3>Bread</h3>
+          <p>Freshly baked breads with Cape Malay flavors.</p>
+          <a href="bread.html" class="card-btn">View Recipes</a>
+        </div>
+
+        <div class="recipe-card">
+          <h3>Desserts</h3>
+          <p>Sweet treats inspired by Cape Malay cuisine.</p>
+          <a href="desserts.html" class="card-btn">View Recipes</a>
+        </div>
+
+        <div class="recipe-card">
+          <h3>Drinks</h3>
+          <p>Refreshing beverages to complement your meals.</p>
+          <a href="drinks.html" class="card-btn">View Recipes</a>
+        </div>
+
+        <div class="recipe-card">
+          <h3>Savouries</h3>
+          <p>Flavoursome snacks and bites from Cape Malay tradition.</p>
+          <a href="savouries.html" class="card-btn">View Recipes</a>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Cape Malay Kitchen. All rights reserved.</p>
+  <footer class="site-footer">
+    <div class="container">
+      <!-- Footer Bottom / Copyright -->
+      <div class="footer-bottom">
+        <p>&copy; 2025 Cape Malay Kitchen. Bringing Our Flavours Home.</p>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
