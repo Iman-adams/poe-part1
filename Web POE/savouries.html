@@ -3,52 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <title>Savouries - Cape Malay Kitchen</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Savouries</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="cape-malay-history.html">Cape Malay History</a></li>
-        <li><a href="bo-kaap-history.html">Bo-Kaap History</a></li>
-        <li><a href="recipes.html">Recipes</a></li>
-      </ul>
-    </nav>
+  <header class="site-header">        
+    <h1>Savouries</h1>        
+    <div class="container">          
+      <nav class="main-nav">
+        <a href="#" class="logo">Cape Malay Kitchen</a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>        
+          <li><a href="about.html">About</a></li>                   
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="cape-malay-history.html">Cape Malay History</a></li>
+          <li><a href="bo-kaap-history.html">Bo-Kaap History</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+        </ul>
+      </nav>    
+    </div>
   </header>
 
   <main>
-    <section>
+    <section class="recipe-cards-section">
       <h2>Recipe Cards</h2>
+      <div class="recipe-cards-container">
 
-      <!-- Recipe Card -->
-      <article>
-        <a href="dhaltjies.html">
-          <img src="20250826_154324.jpg" alt="Cape Malay dhaltjies" width="200">
-          <h3>Cape Malay Dhaltjies</h3>
-          <p>⏱️ Time: 15 minutes</p>
-          <p>🍽️ Serves: 24</p>
-        </a>
-      </article>
+        <!-- Recipe Card: Cape Malay Dhaltjies -->
+        <div class="recipe-card">
+          <a href="dhaltjies.html">
+            <img src="20250826_154324.jpg" alt="Cape Malay Dhaltjies">
+            <h3>Cape Malay Dhaltjies</h3>
+            <p>⏱️ Time: 15 minutes</p>
+            <p>🍽️ Serves: 24</p>
+          </a>
+        </div>
 
-      <article>
-        <a href="savoury-pies.html">
-          <img src="20250820_184139.jpg" alt="Cape Malay Savoury Pies" width="200">
-          <h3>Cape Malay Savoury Pies</h3>
-          <p>⏱️ Time: 30 minutes</p>
-          <p>🍽️ Serves: 30</p>
-        </a>
-      </article>
-
-      <!-- Add more cards here -->
-
+        <!-- Recipe Card: Cape Malay Savoury Pies -->
+        <div class="recipe-card">
+          <a href="savoury-pies.html">
+            <img src="20250820_184139.jpg" alt="Cape Malay Savoury Pies">
+            <h3>Cape Malay Savoury Pies</h3>
+            <p>⏱️ Time: 30 minutes</p>
+            <p>🍽️ Serves: 30</p>
+          </a>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Cape Malay Kitchen. All rights reserved.</p>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2025 Cape Malay Kitchen. Bringing Our Flavours Home.</p>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
