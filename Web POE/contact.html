@@ -1,61 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <title>Contact - Cape Malay Kitchen</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header class="site-header">
-            <h1>Contact</h1>
-            <div class="container">
-                <nav class="main-nav">
-                    <a href="#" class="logo">Cape Malay Kitchen</a>
-                    <ul class="nav-links">
-                        <li><a href="index.html">Home</a></li>        
-                        <li><a href="about.html">About</a></li>                   
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="cape-malay-history.html">Cape Malay History</a></li>
-                        <li><a href="bo-kaap-history.html">Bo-Kaap History</a></li>
-                        <li><a href="recipes.html">Recipes</a></li>
-                    </ul>
-                </nav>    
-            </div>
-        </header>
-        <main>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Cape Malay Kitchen | Get in Touch</title>
+    <meta name="description" content="Contact Cape Malay Kitchen for general inquiries, cultural questions, or to share your family recipes. We'd love to hear from you!">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <h1>Contact Us</h1>
+        <div class="container">
+            <nav class="main-nav">
+                <a href="index.html" class="logo">Cape Malay Kitchen</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>    
+                    <li><a href="enquiry.html">Enquiry</a></li>         
+                    <li><a href="cape-malay-history.html">Cape Malay History</a></li>       
+                    <li><a href="bo-kaap-history.html">Bo-Kaap History</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                </ul>
+            </nav>    
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-info">
+            <h2>Get in Touch</h2>
             <p>If you would like to get in touch, collaborate, or share your family recipe, feel free to reach out!</p>
             <p>Email: info@capemalaykitchen.org</p>
-        </main>
+        </section>
+
         <section class="contact-form">
             <h2>Send us a Message</h2>
-            <form action="#" method="post">
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </section>
-        <section class="map">
-            <h2>Find Us</h2>
-            <div class="map-container">
-                <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3331.04609304043!2d18.553732876342056!3d-33.925231323086835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc5b0fbb5deecd%3A0xd557190b5c4abc43!2s3%20Hertzog%20St%2C%20Epping%20Garden%20Village%2C%20Cape%20Town%2C%207460!5e0!3m2!1sen!2sza!4v1695654982235!5m2!1sen!2sza"  
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"  
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-
-            </div>
-        </section>
-        <footer class="site-footer">
-            <div class="container">
-                <!-- Footer Bottom / Copyright -->
-                <div class="footer-bottom">
-                    <p>&copy; 2025 Cape Malay Kitchen. Bringing Our Flavours Home.</p>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="contactName">Your Name *</label>
+                    <input type="text" id="contactName" name="contactName" required>
+                    <span class="error-message" id="contactNameError"></span>
                 </div>
+
+                <div class="form-group">
+                    <label for="contactEmail">Your Email *</label>
+                    <input type="email" id="contactEmail" name="contactEmail" required>
+                    <span class="error-message" id="contactEmailError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject *</label>
+                    <select id="subject" name="subject" required>
+                        <option value="">Select a subject</option>
+                        <option value="general">General Inquiry</option>
+                        <option value="recipe">Recipe Question</option>
+                        <option value="cultural">Cultural Question</option>
+                        <option value="collaboration">Collaboration</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <span class="error-message" id="subjectError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="contactMessage">Message *</label>
+                    <textarea id="contactMessage" name="contactMessage" rows="5" required placeholder="Tell us about your Cape Malay food experiences, ask questions, or share your thoughts..."></textarea>
+                    <span class="error-message" id="contactMessageError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        Subscribe to our newsletter for new recipes and cultural insights
+                    </label>
+                </div>
+
+                <button type="submit" class="btn">Send Message via Email</button>
+            </form>
+
+            <div id="formSuccess" class="form-success" style="display: none;">
+                <h3>Message Ready to Send!</h3>
+                <p>Your message has been prepared. Click the button below to open your email client and send it to us.</p>
+                <a id="emailLink" class="btn">Open Email Client</a>
+                <button id="newMessage" class="btn">Write New Message</button>
             </div>
-        </footer>
-    </body>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 Cape Malay Kitchen. Bringing Our Flavours Home.</p>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>
