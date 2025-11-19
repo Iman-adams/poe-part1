@@ -1,17 +1,26 @@
-/* ===== Base Styling ===== */
+/* =========================================================
+   BASE STYLING - YOUR ORIGINAL STYLES
+   ========================================================= */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
   background-color: #FDF7F2; /* Coconut Cream */
-  color: #5C3D2E; /* Clover Brown (dark accent for text) */
+  color: #5C3D2E; /* Clover Brown */
 }
 
-/* ===== Header ===== */
+/* Smooth transitions for all interactive elements */
+* {
+  transition: all 0.3s ease;
+}
+
+/* =========================================================
+   HEADER - YOUR ORIGINAL STYLES
+   ========================================================= */
 header {
   background-color: #E96A57; /* Spiced Coral */
-  color: #FDF7F2; /* Coconut Cream */
+  color: #FDF7F2;
   padding: 1rem 0;
 }
 
@@ -20,11 +29,14 @@ header h1 {
   margin: 0;
 }
 
-/* ===== Navigation ===== */
+/* =========================================================
+   NAVIGATION GLOW & BOUNCE EFFECTS - NEW!
+   ========================================================= */
 nav ul {
   list-style: none;
   padding: 0;
   text-align: center;
+  margin: 0;
 }
 
 nav ul li {
@@ -32,89 +44,66 @@ nav ul li {
   margin: 0 15px;
 }
 
-nav ul li a {
-  color: #FDF7F2; /* Coconut Cream */
+.nav-links a {
   text-decoration: none;
+  color: #FDF7F2;
   font-weight: bold;
-}
-
-nav ul li a:hover {
-  color: #F5B942; /* Turmeric Gold */
-}
-
-/* ===== Hero Section ===== */
-.hero {
-  background: url('hero-image.jpg') no-repeat center center/cover;
-  height: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #FDF7F2; /* Coconut Cream */
-  text-align: center;
-  position: relative;
-}
-
-.hero::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(92, 61, 46, 0.5);
-}
-
-.hero * {
-  position: relative;
-}
-
-/* Recipe Cards */
-.cards-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  padding: 20px 0;
-}
-
-.recipe-card {
-  background-color: #FDF7F2; /* light card background */
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  width: 250px;
-  padding: 20px;
-  text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.recipe-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-}
-
-.recipe-card h3 {
-  color: #E96A57; /* primary color */
-  margin-bottom: 10px;
-}
-
-.recipe-card p {
-  color: #333;
-  font-size: 0.95rem;
-  margin-bottom: 15px;
-}
-
-.card-btn {
-  display: inline-block;
-  text-decoration: none;
-  background-color: #6FB1C0; /* secondary color */
-  color: #fff;
   padding: 10px 15px;
-  border-radius: 8px;
-  transition: background-color 0.3s;
+  border-radius: 25px;
+  position: relative;
+  display: inline-block;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.card-btn:hover {
-  background-color: #5a97a7;
+/* Navigation hover glow and bounce - NEW! */
+.nav-links a:hover,
+.nav-links a.nav-active {
+  transform: translateY(-8px) scale(1.15);
+  text-shadow: 
+    0 0 10px rgba(255, 255, 255, 0.9),
+    0 0 20px rgba(255, 255, 255, 0.7),
+    0 0 30px rgba(255, 255, 255, 0.5);
+  color: #FFFFFF;
+  background: rgba(245, 185, 66, 0.2);
+  box-shadow: 
+    0 5px 15px rgba(0, 0, 0, 0.3),
+    0 0 20px rgba(245, 185, 66, 0.4);
 }
 
-/* Recipe Cards Section */
+/* Current page stays glowing - NEW! */
+.nav-links a.current-page {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+  background: rgba(245, 185, 66, 0.15);
+}
+
+/* =========================================================
+   WORD-BY-WORD GLOW EFFECTS - NEW!
+   ========================================================= */
+.glow-word {
+  display: inline-block;
+  padding: 2px 1px;
+  margin: 0 1px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.glow-word:hover,
+.glow-word.word-glow-active {
+  text-shadow: 
+    0 0 8px rgba(245, 185, 66, 0.9),
+    0 0 16px rgba(245, 185, 66, 0.7),
+    0 0 24px rgba(245, 185, 66, 0.5);
+  color: #5C3D2E;
+  transform: scale(1.1);
+  background: rgba(245, 185, 66, 0.1);
+  z-index: 1;
+}
+
+/* =========================================================
+   RECIPE CARDS - YOUR ORIGINAL STYLES (with slight enhancement)
+   ========================================================= */
+.cards-container,
 .recipe-cards-container {
   display: flex;
   flex-wrap: wrap;
@@ -128,21 +117,22 @@ nav ul li a:hover {
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   width: 250px;
-  overflow: hidden;
   text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s;
+  overflow: hidden;
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s; /* Enhanced */
 }
 
+/* Recipe card hover effect - Enhanced bounce */
 .recipe-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
 .recipe-card img {
   width: 100%;
   height: 150px;
   object-fit: cover;
-  display: block;
 }
 
 .recipe-card h3 {
@@ -153,39 +143,48 @@ nav ul li a:hover {
 .recipe-card p {
   color: #333;
   font-size: 0.9rem;
-  margin: 5px 0;
+  margin: 5px 0 15px;
 }
 
-.recipe-card a {
+.card-btn {
+  display: inline-block;
   text-decoration: none;
-  color: inherit;
-  display: block;
-  padding: 10px 0;
+  background-color: #6FB1C0;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 8px;
 }
 
-/* ===== Buttons ===== */
+.card-btn:hover {
+  background-color: #5a97a7;
+}
+
+/* =========================================================
+   GLOBAL BUTTONS - YOUR ORIGINAL STYLES
+   ========================================================= */
 .btn {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #6FB1C0; /* Bo-Kaap Blue */
-  color: #FDF7F2; /* Coconut Cream */
+  background-color: #6FB1C0;
+  color: #FDF7F2;
   text-decoration: none;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-  transition: all 0.3s ease;
 }
 
 .btn:hover {
-  background-color: #F5B942; /* Turmeric Gold */
-  color: #5C3D2E; /* Clover Brown */
+  background-color: #F5B942;
+  color: #5C3D2E;
   transform: translateY(-2px);
 }
 
-/* ===== Contact Form ===== */
+/* =========================================================
+   CONTACT FORM - YOUR ORIGINAL STYLES (enhanced)
+   ========================================================= */
 .contact-form {
   max-width: 600px;
   margin: 20px auto;
-  background: #FFFFFF;
+  background: #FFF;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -194,7 +193,7 @@ nav ul li a:hover {
 .contact-form label {
   display: block;
   margin-bottom: 5px;
-  color: #5C3D2E; /* Clover Brown */
+  color: #5C3D2E;
 }
 
 .contact-form input,
@@ -202,31 +201,40 @@ nav ul li a:hover {
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
-  border: 1px solid #A0B288; /* Cardamom Green */
+  border: 1px solid #A0B288;
   border-radius: 4px;
+  transition: all 0.3s ease; /* Enhanced */
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  transform: scale(1.02); /* Enhanced */
+  box-shadow: 0 0 15px rgba(245, 185, 66, 0.5); /* Enhanced */
+  border-color: #F5B942; /* Enhanced */
+  outline: none;
 }
 
 .contact-form button {
-  background: #E96A57; /* Spiced Coral */
-  color: #FDF7F2; /* Coconut Cream */
+  background: #E96A57;
+  color: #FDF7F2;
   padding: 10px 15px;
   border: none;
   border-radius: 8px;
   cursor: pointer;
   font-weight: bold;
-  transition: all 0.3s ease;
 }
 
 .contact-form button:hover {
-  background: #F5B942; /* Turmeric Gold */
-  color: #5C3D2E; /* Clover Brown */
-  transform: translateY(-2px);
+  background: #F5B942;
+  color: #5C3D2E;
 }
 
-/* ===== Footer ===== */
+/* =========================================================
+   FOOTER - YOUR ORIGINAL STYLES
+   ========================================================= */
 footer {
-  background-color: #5C3D2E; /* Clover Brown */
-  color: #FDF7F2; /* Coconut Cream */
+  background-color: #5C3D2E;
+  color: #FDF7F2;
   padding: 20px 0;
 }
 
@@ -242,15 +250,73 @@ footer {
 }
 
 .footer-section h3 {
-  border-bottom: 2px solid #F5B942; /* Turmeric Gold underline */
+  border-bottom: 2px solid #F5B942;
   padding-bottom: 5px;
 }
 
 .footer-section a {
-  color: #E96A57; /* Spiced Coral links */
+  color: #E96A57;
   text-decoration: none;
 }
 
 .footer-section a:hover {
-  color: #6FB1C0; /* Bo-Kaap Blue hover */
+  color: #6FB1C0;
+}
+
+/* =========================================================
+   IMAGE HOVER EFFECTS - NEW!
+   ========================================================= */
+img {
+  transition: transform 0.3s ease;
+  border-radius: 8px;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+/* =========================================================
+   RESPONSIVE DESIGN (MOBILE) - YOUR ORIGINAL STYLES
+   ========================================================= */
+@media (max-width: 768px) {
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .hero {
+    height: 200px;
+    background-position: center;
+  }
+
+  .cards-container,
+  .recipe-cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .recipe-card {
+    width: 90%;
+    max-width: 350px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-form {
+    width: 90%;
+  }
+
+  .btn,
+  .card-btn {
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Mobile navigation adjustments */
+  .nav-links a.nav-active {
+    transform: translateY(-3px) scale(1.05);
+  }
 }
