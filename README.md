@@ -5,6 +5,7 @@ Cape Malay Kitchen
 ST10464928; Adams, I
 # Project Overview:
 Proposal Content
+
 Created a comprehensive Cape Malay recipe website with interactive features, SEO optimization, and form functionality.
 # Website Goals and Objectives: 
 Goals:Create an online archive of authentic Cape Malay recipes. Promote cultural education through food history and traditions. Provide resources for people to learn and cook Cape Malay meals at home. Use storytelling and community engagement to keep traditions alive. 
@@ -28,7 +29,11 @@ The website will be designed to be an immersive cultural experience, combining d
   •	Week 5: integrate all content, test the site, cross-browser compatibility, and fix bugs, add images. Start finalizing the website, and add it to GitHub.
 # Changelog:
 I made spelling mistake and fixed them after I would proof read and test my website.
-Updated Frikkadel, Mash Potatoe, and Tomatoe Smoortjie code. Created an external CSS stylesheet to add styling to website. Linked the CSS file to all HTML pages for consistent design. Updated recipe pages by moving layout and size styles from inline HTML to the external stylesheet for easier maintenance. Added aditional content to the homepage and About page to make them more informative and visuall complete. Added a contact form and an embedded map to show the loaction on the Contact page.
+Updated Frikkadel, Mash Potatoe, and Tomatoe Smoortjie code.
+
+Created an external CSS stylesheet to add styling to website. Linked the CSS file to all HTML pages for consistent design. Updated recipe pages by moving layout and size styles from inline HTML to the external stylesheet for easier maintenance. Added aditional content to the homepage and About page to make them more informative and visuall complete. Added a contact form and an embedded map to show the loaction on the Contact page.
+
+Over the course of developing the Cape Malay Kitchen website, I transformed a basic HTML structure into a fully interactive and SEO-optimized web application by creating new pages like enquiry.html with dynamic cost calculation forms and enhancing contact.html with email functionality, while updating all existing pages with proper meta tags, semantic HTML, and consistent navigation that now includes all original links plus the new enquiry section. I implemented comprehensive JavaScript functionality including navigation glow and bounce effects, word by word highlighting throughout all text content, recipe card hover animations that preserve the original design, image scaling effects, and advanced form validation with real-time error checking for both contact and enquiry forms, which feature dynamic cost calculations based on recipe type, servings, ingredient quality, and urgency. The CSS was completely overhauled with a cohesive Cape Malay color palette, smooth transitions, glow effects using layered text shadows, responsive flexbox layouts, mobile-friendly navigation that stacks on smaller screens, professional form styling with focus states, and consistent spacing throughout, while maintaining the original recipe card design aesthetic. Additionally, I implemented SEO best practices with unique title tags and meta descriptions for each page, proper heading hierarchies, descriptive image alt attributes, and mobile-responsive design, combined all JavaScript into a single efficient file handling everything from form validation and cost calculations to interactive effects and smooth scrolling, and ensured cross-browser compatibility with accessible form controls and professional user feedback systems throughout the entire website.
 # Reference
 •	Adams, I., 2025. Cape Malay Chicken Curry. [photograph] (Personal Collection). Unpublished.
 •	Adams, I., 2025. Cape Malay Butter Chicken. [photograph] (Personal Collection). Unpublished.
