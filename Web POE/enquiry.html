@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Enquiry - Cape Malay Kitchen | Get Cooking Cost Estimates</title>
+    <meta name="description" content="Get personalized cooking cost estimates and recipe consultations. Calculate ingredients costs and get expert Cape Malay cooking advice.">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <h1>Recipe Enquiry</h1>
+        <div class="container">
+            <nav class="main-nav">
+                <a href="index.html" class="logo">Cape Malay Kitchen</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>    
+                    <li><a href="enquiry.html">Enquiry</a></li>         
+                    <li><a href="cape-malay-history.html">Cape Malay History</a></li>       
+                    <li><a href="bo-kaap-history.html">Bo-Kaap History</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                </ul>
+            </nav>    
+        </div>
+    </header>
+
+    <main>
+        <section class="enquiry-form-section">
+            <h2>Get Recipe Cost Estimate</h2>
+            <p>Fill out this form to get a personalized cost estimate for your Cape Malay cooking needs.</p>
+            
+            <form id="enquiryForm" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" required>
+                    <span class="error-message" id="nameError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error-message" id="emailError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="recipeType">Recipe Type *</label>
+                    <select id="recipeType" name="recipeType" required>
+                        <option value="">Select a recipe type</option>
+                        <option value="main">Main Dish</option>
+                        <option value="bread">Bread</option>
+                        <option value="dessert">Dessert</option>
+                        <option value="drink">Drink</option>
+                        <option value="savoury">Savoury</option>
+                    </select>
+                    <span class="error-message" id="recipeTypeError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="servings">Number of Servings *</label>
+                    <input type="number" id="servings" name="servings" min="1" max="50" required>
+                    <span class="error-message" id="servingsError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="ingredientQuality">Ingredient Quality Preference</label>
+                    <select id="ingredientQuality" name="ingredientQuality">
+                        <option value="budget">Budget Friendly</option>
+                        <option value="standard">Standard Quality</option>
+                        <option value="premium">Premium Quality</option>
+                        <option value="organic">Organic</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="specialRequirements">Special Requirements</label>
+                    <textarea id="specialRequirements" name="specialRequirements" rows="4" placeholder="Any dietary restrictions, allergies, or special notes..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="urgency">Urgency</label>
+                    <select id="urgency" name="urgency">
+                        <option value="casual">Casual (1-2 weeks)</option>
+                        <option value="moderate">Moderate (3-7 days)</option>
+                        <option value="urgent">Urgent (1-2 days)</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn">Get Cost Estimate</button>
+            </form>
+
+            <div id="estimateResult" class="estimate-result" style="display: none;">
+                <h3>Your Cooking Cost Estimate</h3>
+                <div id="resultContent"></div>
+                <button id="newEstimate" class="btn">Calculate New Estimate</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2025 Cape Malay Kitchen. Bringing Our Flavours Home.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
